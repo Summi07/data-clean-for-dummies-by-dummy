@@ -1,10 +1,13 @@
 Regex for cleaning the domain names in a data set of urls in R studio
 
-str_replace(X,"m/.+","m") #removes anything after .com
-str_replace(X,"m/+","m")   #removes anything after .com
-str_replace(X,"g/.+","g")   #removes anything after .org
-str_replace(X,"g/+","g")     #removes anything after .org
-str_replace(X, "n/.+","n")   #removes anything after .in
-str_replace(X, "n/.","n")      ##removes anything after .in
+url <- c( "http://www.vienova.com/index.html", "http://www.ambergroupindia.com/home.html", "http://www.ambergroupindia.com/home.html", "http://www.asapdesigns.in/beams/", "http://www.halonix.co.in/general_lighting.php", "http://www.hathway.com/", "http://www.head-held-high.org/about-us")
+
+
+str_replace(url,"m/.+","m") #removes anything after .com
+str_replace(url,"m/+","m")   #removes anything after .com
+str_replace(url,"g/.+","g")   #removes anything after .org
+str_replace(url,"g/+","g")     #removes anything after .org
+str_replace(url, "n/.+","n")   #removes anything after .in
+str_replace(url, "n/.","n")      ##removes anything after .in
 
 
