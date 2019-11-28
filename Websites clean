@@ -1,0 +1,10 @@
+Regex for cleaning the domain names in a data set of urls in R studio
+
+str_replace(X,"m/.+","m") #removes anything after .com
+str_replace(X,"m/+","m")   #removes anything after .com
+str_replace(X,"g/.+","g")   #removes anything after .org
+str_replace(X,"g/+","g")     #removes anything after .org
+str_replace(X, "n/.+","n")   #removes anything after .in
+str_replace(X, "n/.","n")      ##removes anything after .in
+
+
